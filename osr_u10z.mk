@@ -127,5 +127,3 @@ PRODUCT_BRAND  := Unusual_U10Z
 PRODUCT_NAME   := U10Z
 PRODUCT_DEVICE := u10z
 PRODUCT_MODEL  := Unusual_U10Z
-
-include device/unusual/sun6i-common/prebuild/google/products/gms.mk
