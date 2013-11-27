@@ -1,0 +1,7 @@
+[
+  {
+    "repository": "SuperOSR/android_device_unusual_sun6i-common",
+    "target_path": "device/unusual/sun6i-common",
+    "branch": "kk44"
+  }
+]

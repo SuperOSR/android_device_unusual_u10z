@@ -1,0 +1,17 @@
+[
+  {
+    "repository": "SuperOSR/android_device_unusual_sun6i-common",
+    "target_path": "device/unusual/sun6i-common",
+    "branch": "jb43"
+  },
+  {
+    "repository": "blerfont/linux-allwinner-a31",
+    "target_path": "kernel/unusual/linux-allwinner-a31",
+    "branch": "jb43"
+  },
+    {
+    "repository": "blerfont/android_vendor_unusual_u10z",
+    "target_path": "vendor/unusual/u10z",
+    "branch": "jb43"
+  }
+]
