@@ -19,6 +19,8 @@ TARGET_NO_BOOTLOADER := true
 TARGET_NO_RECOVERY := false
 TARGET_NO_KERNEL := false
 
+TARGET_CPU_VARIANT := cortex-a7
+
 # 1. broadcom wifi support
 BOARD_WIFI_VENDOR := broadcom
 ifeq ($(BOARD_WIFI_VENDOR), broadcom)
