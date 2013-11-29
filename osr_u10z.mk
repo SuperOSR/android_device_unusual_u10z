@@ -123,7 +123,9 @@ PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_AAPT_CONFIG := xlarge hdpi xhdpi large
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
-PRODUCT_BRAND  := Unusual_U10Z
-PRODUCT_NAME   := U10Z
+## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := u10z
-PRODUCT_MODEL  := Unusual_U10Z
+PRODUCT_NAME := osr_u10z
+PRODUCT_BRAND := unusual
+PRODUCT_MODEL := u10z
+PRODUCT_MANUFACTURER := Unusual
