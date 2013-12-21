@@ -20,7 +20,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \
     frameworks/native/data/etc/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml \
-    frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml
+    frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml 
 
 # GPU buffer size configs
 PRODUCT_COPY_FILES += \
@@ -60,7 +60,10 @@ PRODUCT_PACKAGES += \
 	chat \
 	rild \
 	pppd
-
+	
+PRODUCT_PACKAGES += \
+	libnetcmdiface
+	
 # 3G Data Card Configuration Flie
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/usiuna-ril.so:system/lib/usiuna-ril.so \
