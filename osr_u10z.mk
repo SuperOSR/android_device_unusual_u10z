@@ -1,5 +1,7 @@
 $(call inherit-product, device/unusual/sun6i-common/sun6i-common.mk)
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product-if-exists, vendor/unusual/u10z/u10z-vendor.mk)
+$(call inherit-product-if-exists, vendor/osr/config/full_tablet.mk)
 
 # init.rc, kernel
 PRODUCT_COPY_FILES += \
