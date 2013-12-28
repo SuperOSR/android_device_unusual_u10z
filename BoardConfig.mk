@@ -23,21 +23,19 @@ TARGET_CPU_VARIANT := cortex-a7
 
 # 1. broadcom wifi support
 BOARD_WIFI_VENDOR := broadcom
-ifeq ($(BOARD_WIFI_VENDOR), broadcom)
-    BOARD_WPA_SUPPLICANT_DRIVER := NL80211
-    WPA_SUPPLICANT_VERSION := VER_0_8_X
-    BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
-    BOARD_HOSTAPD_DRIVER := NL80211
-    BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_bcmdhd
-    BOARD_WLAN_DEVICE           := bcmdhd
-    WIFI_DRIVER_FW_PATH_PARAM := "/sys/module/bcmdhd/parameters/firmware_path"
+BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+WPA_SUPPLICANT_VERSION := VER_0_8_X
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
+BOARD_HOSTAPD_DRIVER := NL80211
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_bcmdhd
+BOARD_WLAN_DEVICE := bcmdhd
+WIFI_DRIVER_FW_PATH_PARAM := "/sys/module/bcmdhd/parameters/firmware_path"
 
-    SW_BOARD_USR_WIFI := AP6210
-    
-    WIFI_DRIVER_FW_PATH_STA := "/system/vendor/modules/fw_bcm40181a2.bin"
-    WIFI_DRIVER_FW_PATH_P2P := "/system/vendor/modules/fw_bcm40181a2_p2p.bin"
-    WIFI_DRIVER_FW_PATH_AP  := "/system/vendor/modules/fw_bcm40181a2_apsta.bin"
-endif
+SW_BOARD_USR_WIFI := AP6210
+
+WIFI_DRIVER_FW_PATH_STA := "/system/vendor/modules/fw_bcm40181a2.bin"
+WIFI_DRIVER_FW_PATH_P2P := "/system/vendor/modules/fw_bcm40181a2_p2p.bin"
+WIFI_DRIVER_FW_PATH_AP  := "/system/vendor/modules/fw_bcm40181a2_apsta.bin"
     
 #2.Bluetooth Configuration
     #make sure BOARD_HAVE_BLUETOOTH is true for every bt vendor
