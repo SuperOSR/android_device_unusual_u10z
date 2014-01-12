@@ -11,8 +11,6 @@ PRODUCT_COPY_FILES += \
 	device/unusual/u10z/ueventd.sun6i.rc:root/ueventd.sun6i.rc \
 	device/unusual/u10z/initlogo.rle:root/initlogo.rle  \
 	device/unusual/u10z/fstab.sun6i:root/fstab.sun6i \
-	device/unusual/u10z/media/bootanimation.zip:system/media/bootanimation.zip \
-	device/unusual/u10z/media/bootlogo.bmp:system/media/bootlogo.bmp \
 	device/unusual/u10z/init.recovery.sun6i.rc:root/init.recovery.sun6i.rc
 
 # wifi features
