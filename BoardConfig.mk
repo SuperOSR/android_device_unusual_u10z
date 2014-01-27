@@ -43,3 +43,6 @@ WIFI_DRIVER_FW_PATH_AP  := "/system/vendor/modules/fw_bcm40181a2_apsta.bin"
     BOARD_HAVE_BLUETOOTH_BCM := true
     SW_BOARD_HAVE_BLUETOOTH_NAME := ap6210
     BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/unusual/u10z/bluetooth/
+
+# Needed for blobs
+COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
