@@ -60,7 +60,9 @@ PRODUCT_PACKAGES += \
 	pppd
 	
 PRODUCT_PACKAGES += \
-	libnetcmdiface
+	libnetcmdiface \
+	libemoji \
+	libmemtrack
 	
 # 3G Data Card Configuration Flie
 PRODUCT_COPY_FILES += \
